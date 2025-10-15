@@ -13,10 +13,10 @@ echo "🚀 Начинаем развертывание Telegram бота..."
 sudo mkdir -p $BOT_DIR
 sudo chown $USER:$USER $BOT_DIR
 
-# Клонируем репозиторий (замените на ваш URL)
+# Клонируем репозиторий
 if [ ! -d "$BOT_DIR/.git" ]; then
     echo "📦 Клонирование репозитория..."
-    git clone <YOUR_REPO_URL> $BOT_DIR
+    git clone https://github.com/DjangoOG/NiggaDogs.git $BOT_DIR
 else
     echo "📦 Обновление репозитория..."
     cd $BOT_DIR
